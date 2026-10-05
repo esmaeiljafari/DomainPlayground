@@ -1,0 +1,25 @@
+<Solution>
+  <Folder Name="/01.src/" />
+  <Folder Name="/01.src/00.Shared/">
+    <Project Path="src/Shared/DomainPlayground.SharedKernel/DomainPlayground.SharedKernel.csproj" Id="90d18116-dca5-48de-ab79-c9455d2f2712" />
+  </Folder>
+  <Folder Name="/01.src/01.Core/">
+    <Project Path="src/Core/DomainPlayground.Core.Application/DomainPlayground.Core.Application.csproj" />
+    <Project Path="src/Core/DomainPlayground.Core.Domain/DomainPlayground.Core.Domain.csproj" />
+  </Folder>
+  <Folder Name="/01.src/02.infrastructure/">
+    <Project Path="src/Infrastructure/DomainPlayground.Infrastructure.Identity/DomainPlayground.Infrastructure.Identity.csproj" Id="995a0d02-b804-4be2-92cb-14ae1fb03381" />
+    <Project Path="src/Infrastructure/DomainPlayground.Infrastructure.Persistence.Command/DomainPlayground.Infrastructure.Persistence.Commands.csproj" Id="d4dcfd29-cffa-4108-89eb-bd863c1d5154" />
+    <Project Path="src/Infrastructure/DomainPlayground.Infrastructure.Persistence.Queries/DomainPlayground.Infrastructure.Persistence.Queries.csproj" Id="cddece82-d346-45c3-90a7-c874680a4d01" />
+    <Project Path="src/Infrastructure/DomainPlayground.Infrastructure/DomainPlayground.Infrastructure.csproj" Id="834fccb5-81b2-41d7-9088-e2ef0397229e" />
+  </Folder>
+  <Folder Name="/01.src/03.EndPoint/">
+    <Project Path="src/EndPoint/DomainPlayground.EndPoint.API/DomainPlayground.EndPoint.API.csproj" Id="a9fafdef-b9bd-474c-ae98-5b60d7a803a7" />
+  </Folder>
+  <Folder Name="/02.tests/">
+    <Project Path="tests/DomainPlayground.Core.Application.UnitTests/DomainPlayground.Core.Application.UnitTests.csproj" Id="e8ee4af6-8ea9-422e-a19f-c966bc68ed1d" />
+    <Project Path="tests/DomainPlayground.Core.Domain.UnitTests/DomainPlayground.Core.Domain.UnitTests.csproj" Id="d9c275b2-e761-442f-b772-9803262e4573" />
+    <Project Path="tests/DomainPlayground.IntegrationTests/DomainPlayground.IntegrationTests.csproj" Id="0c478e1d-7717-42bc-895a-755ed5084161" />
+  </Folder>
+  <Folder Name="/03.doc/" />
+</Solution>

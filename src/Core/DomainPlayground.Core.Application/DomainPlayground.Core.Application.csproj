@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="12.1.1" />
+    <PackageReference Include="MediatR" Version="14.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="10.0.10" />
+	  <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.*" />
+
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Features\Authorization\Models\" />
+    <Folder Include="Features\Authorization\Permissions\Commands\" />
+    <Folder Include="Features\Authorization\Permissions\Queries\" />
+    <Folder Include="Features\Identity\Queries\" />
+    <Folder Include="Features\Users\Commands\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Shared\DomainPlayground.SharedKernel\DomainPlayground.SharedKernel.csproj" />
+    <ProjectReference Include="..\DomainPlayground.Core.Domain\DomainPlayground.Core.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

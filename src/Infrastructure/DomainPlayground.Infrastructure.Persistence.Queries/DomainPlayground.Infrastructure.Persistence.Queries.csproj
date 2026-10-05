@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net10.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\Core\DomainPlayground.Core.Application\DomainPlayground.Core.Application.csproj" />
+		<ProjectReference Include="..\..\Core\DomainPlayground.Core.Domain\DomainPlayground.Core.Domain.csproj" />
+		<ProjectReference Include="..\..\Shared\DomainPlayground.SharedKernel\DomainPlayground.SharedKernel.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.10" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="10.0.10" />
+	</ItemGroup>
+
+</Project>

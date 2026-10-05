@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="coverlet.collector" Version="6.0.4" />
+    <PackageReference Include="FluentAssertions" Version="8.11.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.14.1" />
+    <PackageReference Include="xunit" Version="2.9.3" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="4.0.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Xunit" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Core\DomainPlayground.Core.Application\DomainPlayground.Core.Application.csproj" />
+    <ProjectReference Include="..\..\src\Core\DomainPlayground.Core.Domain\DomainPlayground.Core.Domain.csproj" />
+    <ProjectReference Include="..\..\src\EndPoint\DomainPlayground.EndPoint.API\DomainPlayground.EndPoint.API.csproj" />
+    <ProjectReference Include="..\..\src\Infrastructure\DomainPlayground.Infrastructure.Identity\DomainPlayground.Infrastructure.Identity.csproj" />
+    <ProjectReference Include="..\..\src\Infrastructure\DomainPlayground.Infrastructure.Persistence.Command\DomainPlayground.Infrastructure.Persistence.Commands.csproj" />
+    <ProjectReference Include="..\..\src\Infrastructure\DomainPlayground.Infrastructure.Persistence.Queries\DomainPlayground.Infrastructure.Persistence.Queries.csproj" />
+    <ProjectReference Include="..\..\src\Infrastructure\DomainPlayground.Infrastructure\DomainPlayground.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\src\Shared\DomainPlayground.SharedKernel\DomainPlayground.SharedKernel.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Authorization\" />
+  </ItemGroup>
+
+</Project>
